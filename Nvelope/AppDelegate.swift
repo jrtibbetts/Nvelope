@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Nvelope
-//
-//  Created by Jason R Tibbetts on 6/8/17.
 //  Copyright © 2017 nrith. All rights reserved.
-//
 
 import UIKit
 import CoreData
