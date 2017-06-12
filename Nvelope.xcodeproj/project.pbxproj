@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9633EC991EECABF5007B5628 /* NLPEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633EC981EECABF5007B5628 /* NLPEngine.swift */; };
+		9633EC9B1EECAE76007B5628 /* NLPEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633EC9A1EECAE76007B5628 /* NLPEngineTests.swift */; };
 		964DE6431EEA26B4009C8268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE6421EEA26B4009C8268 /* AppDelegate.swift */; };
-		964DE6451EEA26B4009C8268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE6441EEA26B4009C8268 /* ViewController.swift */; };
+		964DE6451EEA26B4009C8268 /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE6441EEA26B4009C8268 /* TextInputViewController.swift */; };
 		964DE6481EEA26B4009C8268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964DE6461EEA26B4009C8268 /* Main.storyboard */; };
 		964DE64B1EEA26B4009C8268 /* Nvelope.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 964DE6491EEA26B4009C8268 /* Nvelope.xcdatamodeld */; };
 		964DE64D1EEA26B4009C8268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964DE64C1EEA26B4009C8268 /* Assets.xcassets */; };
 		964DE6501EEA26B4009C8268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964DE64E1EEA26B4009C8268 /* LaunchScreen.storyboard */; };
-		964DE65B1EEA26B4009C8268 /* NvelopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE65A1EEA26B4009C8268 /* NvelopeTests.swift */; };
-		964DE6661EEA26B4009C8268 /* NvelopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE6651EEA26B4009C8268 /* NvelopeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,19 +35,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9633EC981EECABF5007B5628 /* NLPEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLPEngine.swift; sourceTree = "<group>"; };
+		9633EC9A1EECAE76007B5628 /* NLPEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLPEngineTests.swift; sourceTree = "<group>"; };
 		964DE63F1EEA26B4009C8268 /* Nvelope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nvelope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964DE6421EEA26B4009C8268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		964DE6441EEA26B4009C8268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		964DE6441EEA26B4009C8268 /* TextInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
 		964DE6471EEA26B4009C8268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		964DE64A1EEA26B4009C8268 /* Nvelope.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nvelope.xcdatamodel; sourceTree = "<group>"; };
 		964DE64C1EEA26B4009C8268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		964DE64F1EEA26B4009C8268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		964DE6511EEA26B4009C8268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964DE6561EEA26B4009C8268 /* NvelopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NvelopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		964DE65A1EEA26B4009C8268 /* NvelopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvelopeTests.swift; sourceTree = "<group>"; };
 		964DE65C1EEA26B4009C8268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964DE6611EEA26B4009C8268 /* NvelopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NvelopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		964DE6651EEA26B4009C8268 /* NvelopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvelopeUITests.swift; sourceTree = "<group>"; };
 		964DE6671EEA26B4009C8268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,12 +100,13 @@
 			isa = PBXGroup;
 			children = (
 				964DE6421EEA26B4009C8268 /* AppDelegate.swift */,
-				964DE6441EEA26B4009C8268 /* ViewController.swift */,
+				964DE6441EEA26B4009C8268 /* TextInputViewController.swift */,
 				964DE6461EEA26B4009C8268 /* Main.storyboard */,
 				964DE64C1EEA26B4009C8268 /* Assets.xcassets */,
 				964DE64E1EEA26B4009C8268 /* LaunchScreen.storyboard */,
 				964DE6511EEA26B4009C8268 /* Info.plist */,
 				964DE6491EEA26B4009C8268 /* Nvelope.xcdatamodeld */,
+				9633EC981EECABF5007B5628 /* NLPEngine.swift */,
 			);
 			path = Nvelope;
 			sourceTree = "<group>";
@@ -113,8 +114,8 @@
 		964DE6591EEA26B4009C8268 /* NvelopeTests */ = {
 			isa = PBXGroup;
 			children = (
-				964DE65A1EEA26B4009C8268 /* NvelopeTests.swift */,
 				964DE65C1EEA26B4009C8268 /* Info.plist */,
+				9633EC9A1EECAE76007B5628 /* NLPEngineTests.swift */,
 			);
 			path = NvelopeTests;
 			sourceTree = "<group>";
@@ -122,7 +123,6 @@
 		964DE6641EEA26B4009C8268 /* NvelopeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				964DE6651EEA26B4009C8268 /* NvelopeUITests.swift */,
 				964DE6671EEA26B4009C8268 /* Info.plist */,
 			);
 			path = NvelopeUITests;
@@ -259,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964DE6451EEA26B4009C8268 /* ViewController.swift in Sources */,
+				964DE6451EEA26B4009C8268 /* TextInputViewController.swift in Sources */,
 				964DE6431EEA26B4009C8268 /* AppDelegate.swift in Sources */,
+				9633EC991EECABF5007B5628 /* NLPEngine.swift in Sources */,
 				964DE64B1EEA26B4009C8268 /* Nvelope.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964DE65B1EEA26B4009C8268 /* NvelopeTests.swift in Sources */,
+				9633EC9B1EECAE76007B5628 /* NLPEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964DE6661EEA26B4009C8268 /* NvelopeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3MY7LL9G36;
 				INFOPLIST_FILE = Nvelope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.nrith.Nvelope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3MY7LL9G36;
 				INFOPLIST_FILE = Nvelope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.nrith.Nvelope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,6 +530,7 @@
 				964DE66C1EEA26B4009C8268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		964DE66D1EEA26B4009C8268 /* Build configuration list for PBXNativeTarget "NvelopeTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +539,7 @@
 				964DE66F1EEA26B4009C8268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		964DE6701EEA26B4009C8268 /* Build configuration list for PBXNativeTarget "NvelopeUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +548,7 @@
 				964DE6721EEA26B4009C8268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
