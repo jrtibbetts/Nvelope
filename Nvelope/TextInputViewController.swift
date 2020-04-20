@@ -18,9 +18,10 @@ open class TextInputViewController: UIViewController {
         }
     }
 
-    @IBOutlet private weak var tagTable: UITableView!
 
     // MARK: - Other properties
+
+    private var isTagging: Bool = false
 
     /// The utility that adjusts the text view's bottom content inset
     /// when the keyboard is shown or hidden.
@@ -30,32 +31,55 @@ open class TextInputViewController: UIViewController {
 
     private var tags: [NSLinguisticTag] = [] {
         didSet {
-            tagTable.reloadData()
+            isTagging = true
+
+            print("\n")
+
+            let attributedString = NSMutableAttributedString()
+
+            textView.text.split(separator: " ").enumerated().forEach { (element) in
+                let tag = tags[element.offset]
+                let word = String(element.element)
+                let color: UIColor
+
+                switch tag {
+                case .adjective:
+                    color = UIColor.red.withAlphaComponent(0.8)
+                case .adverb:
+                    color = UIColor.green.withAlphaComponent(0.8)
+                case .classifier:
+                    color = .blue
+                case .closeParenthesis,
+                     .closeQuote,
+                     .openQuote,
+                     .openParenthesis,
+                     .otherWhitespace,
+                     .whitespace:
+                    color = .black
+                case .conjunction:
+                    color = .brown
+                case .noun,
+                     .number:
+                    color = .red
+                case .pronoun:
+                    color = UIColor.red.withAlphaComponent(0.9)
+                case .verb:
+                    color = .green
+                default:
+                    color = .darkGray
+                }
+
+                print("Word: \(word), color: \(color)")
+                let attributedWord = NSAttributedString(string: "\(word) ",
+                                                        attributes: [.foregroundColor: color,
+                                                                     .font: textView.font])
+                attributedString.append(attributedWord)
+            }
+
+            textView.attributedText = attributedString
+
+            isTagging = false
         }
-    }
-
-}
-
-extension TextInputViewController: UITableViewDataSource {
-
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    public func tableView(_ tableView: UITableView,
-                          numberOfRowsInSection section: Int) -> Int {
-        return tags.count
-    }
-
-    public func tableView(_ tableView: UITableView,
-                          cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tag = tags[indexPath.row]
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tagCell",
-                                                 for: indexPath)
-        cell.textLabel?.text = String(textView.text.split(separator: " ")[indexPath.row])
-        cell.detailTextLabel?.text = tag.rawValue
-        return cell
     }
 
 }
@@ -63,8 +87,14 @@ extension TextInputViewController: UITableViewDataSource {
 extension TextInputViewController: UITextViewDelegate {
 
     public func textViewDidChange(_ textView: UITextView) {
-        tagger.string = textView.text
-        tags = tagger.partOfSpeechTags
+        guard isTagging == false else { return }
+
+        let text = textView.text
+
+        if text?.trimmingCharacters(in: .whitespacesAndNewlines) != text {
+            tagger.string = textView.text
+            tags = tagger.partOfSpeechTags
+        }
     }
 }
 

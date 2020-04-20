@@ -19,8 +19,7 @@
                                 <rect key="frame" x="20" y="44" width="374" height="692"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JWV-d2-lbl">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="346"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="692"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -28,39 +27,6 @@
                                             <outlet property="delegate" destination="lls-qJ-gdO" id="TRE-7A-qXz"/>
                                         </connections>
                                     </textView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7l0-pD-PgI" userLabel="Tag Table">
-                                        <rect key="frame" x="0.0" y="346" width="374" height="346"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tagCell" textLabel="boo-ry-SQN" detailTextLabel="TA3-aT-YGT" style="IBUITableViewCellStyleValue1" id="okm-w6-Z3G">
-                                                <rect key="frame" x="0.0" y="28" width="374" height="43.666667938232422"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="okm-w6-Z3G" id="Uas-aI-S9c">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="boo-ry-SQN">
-                                                            <rect key="frame" x="20.000000000000004" y="11.999999999999998" width="33.333333333333336" height="20.333333333333332"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TA3-aT-YGT">
-                                                            <rect key="frame" x="310" y="11.999999999999998" width="44" height="20.333333333333332"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="lls-qJ-gdO" id="S82-19-jpg"/>
-                                        </connections>
-                                    </tableView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -75,7 +41,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Nvelope" id="ehp-ey-bi2"/>
                     <connections>
-                        <outlet property="tagTable" destination="7l0-pD-PgI" id="JWz-hX-nKq"/>
                         <outlet property="textView" destination="JWV-d2-lbl" id="maP-s3-dOv"/>
                     </connections>
                 </viewController>
