@@ -6,6 +6,7 @@ import XCTest
 class NLPEngineTests: XCTestCase {
 
     // MARK: - init()
+
     func testInitializerWithNoArgumentsUsesNameTypeOrLexicalClassScheme() {
         let engine = NLPEngine()
         XCTAssertEqual(engine.schemes.count, 1)
@@ -21,6 +22,7 @@ class NLPEngineTests: XCTestCase {
     }
 
     // MARK: - string
+
     func testStringSetterAndGetter() {
         var engine = NLPEngine()
         let string = "It was the best of times, it was the worst of times."
